@@ -86,3 +86,20 @@ Use late quando:
 A variável não pode ser null, mas será inicializada depois.
 Você tem certeza de que o valor será definido antes do uso.
 Evita tornar a variável null desnecessariamente (?).
+
+• Gostaria de entender quais os benefícios de utilização do modificador "late" no Dart. 
+
+1. Evita valores nulos (null) sem precisar de ?
+Em Dart, sem late, se uma variável não for inicializada imediatamente, ela precisa ser nullable (?). Isso pode ser um problema se você quer garantir que ela terá um valor, mas só será inicializada depois.
+
+2. Inicialização eficiente e mais rápida
+Se uma variável contém um valor que só será usado mais tarde, late adianta a inicialização e melhora o desempenho.
+
+3. Permite variáveis obrigatórias em classes sem null
+Se um valor será sempre definido antes do uso, mas não pode ser inicializado no construtor, late ajuda a manter o código seguro.
+
+4. Ideal para injeção de dependência e variáveis que dependem de lógica
+Em frameworks como Flutter, late permite inicializar variáveis depois de carregar dados da API ou banco de dados, sem que precisem ser null.
+
+5. Evita inicializações desnecessárias
+Se uma variável não for usada imediatamente, late adiará sua criação, evitando desperdício de memória e processamento.
