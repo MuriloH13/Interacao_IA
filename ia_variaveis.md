@@ -130,4 +130,18 @@ Exemplo: Dados de uma API, tempo atual, entrada do usuário.
 Use const quando o valor é fixo e conhecido na compilação
 Exemplo: Pi, tamanhos fixos, strings constantes.
 
-Se precisar de imutabilidade máxima e otimização de memória, prefira const sempre que possível. 🚀
+Se precisar de imutabilidade máxima e otimização de memória, prefira const sempre que possível.
+
+• Por que no dart usar variáveis final e const ao invés de usar somente seus valores padrão? 
+
+1. Evita valores mágicos e melhora a legibilidade do código
+Se você espalha valores fixos pelo código, ele pode se tornar difícil de entender e manter. Usar final ou const dá nomes significativos aos valores, tornando o código mais claro e fácil de ler.
+
+2. Evita repetições e facilita a manutenção
+Se você precisar mudar um valor fixo, mudar apenas uma variável final ou const atualiza todo o código automaticamente.
+
+3. Melhora o desempenho e reduz o consumo de memória
+Quando usamos const, o Dart otimiza o uso da memória armazenando valores fixos uma única vez e reaproveitando-os.
+
+4. Garante imutabilidade e segurança no código
+Usar final e const impede que valores sejam alterados acidentalmente, evitando bugs difíceis de encontrar.
