@@ -40,3 +40,31 @@ Se uma variável pode ser null, deve ser declarada corretamente com ? para evita
 
 7. Usar listas e mapas mutáveis quando não precisa
 Se a coleção não deve ser alterada, declare-a como const para evitar modificações acidentais.
+
+• Quais cuidados tomar quando crio variáveis com valor nulo trabalhando com dart? 
+
+1. Use ? para permitir valores nulos
+Em Dart, uma variável pode ser nullable (aceita null) ou non-nullable (não aceita null). Para permitir null, use ? ao declarar a variável.
+
+2. Verifique se a variável não é null antes de usá-la
+Se uma variável pode ser null, você deve tratá-la antes de acessá-la para evitar erros.
+
+Use if antes de acessar:
+Use o operador ?. para evitar erros:
+Use ?? para definir um valor padrão:
+
+3. Evite late sem necessidade
+O modificador late permite adiar a inicialização de uma variável, mas se ela não for inicializada antes do uso, causará erro.
+Use late apenas quando souber que a variável será inicializada antes do uso:
+
+4. Converta null para um valor padrão com ??
+O operador ?? permite definir um valor caso a variável seja nula.
+
+5. Utilize ! apenas quando tiver certeza de que não é null
+O operador ! força Dart a tratar a variável como não nula, mas se a variável for realmente null, o programa quebrará.
+
+ 6. Inicialize variáveis nullable com valores padrão sempre que possível
+Evite null desnecessário atribuindo um valor padrão na inicialização.
+
+7. Use required para parâmetros que não podem ser nulos
+Quando criar funções ou classes, use required para obrigar que certos valores sejam passados.
