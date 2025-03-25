@@ -145,3 +145,59 @@ Quando usamos const, o Dart otimiza o uso da memória armazenando valores fixos 
 
 4. Garante imutabilidade e segurança no código
 Usar final e const impede que valores sejam alterados acidentalmente, evitando bugs difíceis de encontrar.
+
+• Quais métodos possuem as variáveis strings no dart? 
+
+1. Métodos de Manipulação de Texto
+
+🔹 toUpperCase() – Converte para maiúsculas
+
+🔹 toLowerCase() – Converte para minúsculas
+
+🔹 trim() – Remove espaços extras no início e no fim
+
+🔹 replaceAll(String antiga, String nova) – Substitui todas as ocorrências
+
+🔹 replaceFirst(String antiga, String nova) – Substitui a primeira ocorrência
+
+🔹 replaceRange(int start, int end, String nova) – Substitui um trecho
+
+2. Métodos de Busca
+
+🔹 contains(String substring) – Verifica se contém um texto
+
+🔹 indexOf(String substring) – Retorna a posição da primeira ocorrência
+
+🔹 lastIndexOf(String substring) – Retorna a posição da última ocorrência
+
+3. Métodos de Extração e Divisão
+
+🔹 substring(int inicio, [int fim]) – Retorna parte da string
+
+🔹 split(String delimitador) – Divide uma string em uma lista
+
+🔹 characters – Divide a string em caracteres
+
+4. Métodos de Verificação
+
+🔹 startsWith(String prefixo) – Verifica se começa com um texto
+
+🔹 endsWith(String sufixo) – Verifica se termina com um texto
+
+🔹 isEmpty – Verifica se a string está vazia
+
+🔹 isNotEmpty – Verifica se a string não está vazia
+
+5. Métodos de Formatação
+
+🔹 padLeft(int comprimento, [String preenchimento]) – Preenche à esquerda
+
+🔹 padRight(int comprimento, [String preenchimento]) – Preenche à direita
+
+6. Métodos de Conversão
+
+🔹 toString() – Converte qualquer valor para string
+
+🔹 parse() – Converte uma string para número
+
+🔹 toInt() e toDouble() – Converte para número
