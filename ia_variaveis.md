@@ -201,3 +201,37 @@ Usar final e const impede que valores sejam alterados acidentalmente, evitando b
 🔹 parse() – Converte uma string para número
 
 🔹 toInt() e toDouble() – Converte para número
+
+• Traga a documentação dos métodos de variáveis inteiras.
+
+• Métodos da classe int
+
+🔹 abs(): Retorna o valor absoluto do número.​
+
+🔹 ceil(): Arredonda o número para cima, retornando o menor inteiro maior ou igual a ele.
+
+🔹 floor(): Arredonda o número para baixo, retornando o maior inteiro menor ou igual a ele.
+
+🔹 round(): Arredonda o número para o inteiro mais próximo.
+
+🔹 toDouble(): Converte o inteiro para um número de ponto flutuante (double)
+
+🔹 toString(): Converte o inteiro para uma representação em string.
+
+🔹 isEven: Retorna true se o número for par.
+
+🔹 isOdd: Retorna true se o número for ímpar.
+
+🔹 gcd(int other): Calcula o maior divisor comum (MDC) entre o número e outro fornecido.
+
+🔹 modInverse(int modulus): Retorna o inverso modular deste número em relação ao módulo especificado.​
+
+🔹 modPow(int exponent, int modulus): Calcula a exponenciação modular deste número elevado ao expoente especificado, módulo o valor fornecido.​
+
+🔹 toRadixString(int radix): Converte o número para uma string na base especificada (entre 2 e 36).
+
+🔹 bitLength: Retorna o número de bits necessários para representar o valor em binário, excluindo o sinal.
+
+🔹 toUnsigned(int width): Trunca o número para um valor não assinado com o número de bits especificado.
+
+🔹 toSigned(int width): Trunca o número para um valor assinado com o número de bits especificado.
