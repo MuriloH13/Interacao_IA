@@ -68,3 +68,21 @@ Evite null desnecessário atribuindo um valor padrão na inicialização.
 
 7. Use required para parâmetros que não podem ser nulos
 Quando criar funções ou classes, use required para obrigar que certos valores sejam passados.
+
+• No dart quando usar variáveis nulas e quando usar o modificador late? 
+
+Quando usar variáveis nulas (?)
+Use ? quando o valor pode realmente ser null em algum momento do código. Isso ajuda a evitar erros e tornar o código mais seguro.
+
+Use ? quando:
+A variável pode não ter um valor inicial válido.
+O valor pode ser alterado para null mais tarde.
+Você pode lidar com null usando if, ??, ?., etc.
+
+Quando usar late?
+Use late quando a variável será inicializada mais tarde, mas sempre antes de ser usada.
+
+Use late quando:
+A variável não pode ser null, mas será inicializada depois.
+Você tem certeza de que o valor será definido antes do uso.
+Evita tornar a variável null desnecessariamente (?).
