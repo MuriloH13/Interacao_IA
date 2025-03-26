@@ -18,6 +18,13 @@ Prefira usar tipos específicos ou Object? se precisar armazenar qualquer valor.
 4. Use late apenas quando necessário
 late pode ser útil para inicialização tardia, mas evite seu uso excessivo.
 
+<!--
+
+Nesta questão a IA disponibilizou dicas para uma melhor manipulação do programa ao ser executado,
+pois ela da dicas de como evitar utilidades de certo modo desnecessárias na execução do programa.
+
+-->
+
 • O que evitar na hora de declarar variáveis em dart?
 
 1. Usar var ou dynamic sem necessidade
@@ -40,6 +47,16 @@ Se uma variável pode ser null, deve ser declarada corretamente com ? para evita
 
 7. Usar listas e mapas mutáveis quando não precisa
 Se a coleção não deve ser alterada, declare-a como const para evitar modificações acidentais.
+
+<!--
+
+Nesta questão a IA disponibiliza algumas dicas em relação a boas práticas na programação como a
+não declarar variáveis com nomes genéricos, não usar var ou dynamic sem necessidade ou até a não
+utilização de final e const quando os valores não são mutáveis no programa. Essas dicas são exce-
+lentes principalmente para melhorar tanto a legibilidade do código quanto sua execução.
+
+
+-->
 
 • Quais cuidados tomar quando crio variáveis com valor nulo trabalhando com dart? 
 
@@ -69,6 +86,16 @@ Evite null desnecessário atribuindo um valor padrão na inicialização.
 7. Use required para parâmetros que não podem ser nulos
 Quando criar funções ou classes, use required para obrigar que certos valores sejam passados.
 
+<!--
+
+Nesta questão a IA da dicas de como fazer a utilização correta de variáveis nulas e também
+disponibiliza dicas de como saber se a variável em questão realmente tem que ser nula ou
+talvez, possa ser uma variável com um valor base onde em um problema específico isso possa
+ser considerado um valor nulo, como setar um valor 0.00 em uma variável de um programa que
+faz a soma de algo com essa variável por exemplo.
+
+-->
+
 • No dart quando usar variáveis nulas e quando usar o modificador late? 
 
 Quando usar variáveis nulas (?)
@@ -87,6 +114,15 @@ A variável não pode ser null, mas será inicializada depois.
 Você tem certeza de que o valor será definido antes do uso.
 Evita tornar a variável null desnecessariamente (?).
 
+<!--
+
+Nesta questão a IA mostra um pouco do modificador late e variáveis nulas, onde as variá-
+veis nulas geralmente são variáveis com valores não obrigatoriamente informados/opcionais
+e o modificador late é dito como uma variável que se assemelha ao null por ser inicialmente
+nula e que embora esse fator ainda deve ser informada em algum momento.
+
+-->
+
 • Gostaria de entender quais os benefícios de utilização do modificador "late" no Dart. 
 
 1. Evita valores nulos (null) sem precisar de ?
@@ -103,6 +139,15 @@ Em frameworks como Flutter, late permite inicializar variáveis depois de carreg
 
 5. Evita inicializações desnecessárias
 Se uma variável não for usada imediatamente, late adiará sua criação, evitando desperdício de memória e processamento.
+
+<!--
+
+Nesta questão a IA demonstra que o modificador late serve basicamente para delimitar
+variáveis que não são declaradas pré-inicialização do código e que recebem valores somente
+durante o período de execução do código, o que potencializa o desempenho do código e des-
+carta a utilização de um valor inicial para a variável em questão.
+
+-->
 
 • Quais as diferenças entre final e const em dart?
 
@@ -132,6 +177,16 @@ Exemplo: Pi, tamanhos fixos, strings constantes.
 
 Se precisar de imutabilidade máxima e otimização de memória, prefira const sempre que possível.
 
+<!--
+
+Nesta questão a IA demonstra as diferenças entre os modificadores final e const demonstrando
+algumas de suas regras específicas como valores imutáveis em const e valores mutáveis em
+tempo de execução como em final, assim destacando também a questão da otimização onde em
+variáveis constantes o programa tem mais facilidade no acesso devido as mesmas serem imutáveis
+e descartarem a necessidade de verificação da alteração da variável.
+
+-->
+
 • Por que no dart usar variáveis final e const ao invés de usar somente seus valores padrão? 
 
 1. Evita valores mágicos e melhora a legibilidade do código
@@ -145,6 +200,14 @@ Quando usamos const, o Dart otimiza o uso da memória armazenando valores fixos 
 
 4. Garante imutabilidade e segurança no código
 Usar final e const impede que valores sejam alterados acidentalmente, evitando bugs difíceis de encontrar.
+
+<!--
+
+Nesta questão a IA demonstra que basicamente o motivo da utilização das variáveis final e const
+está na otimização de código e também segurança de código pois por estas serem variáveis "constantes"
+seu acesso para alteração ou remoção tornam-se mais difíceis do que em variáveis var por exemplo.
+
+-->
 
 • Quais métodos possuem as variáveis strings no dart? 
 
@@ -202,6 +265,14 @@ Usar final e const impede que valores sejam alterados acidentalmente, evitando b
 
 🔹 toInt() e toDouble() – Converte para número
 
+<!--
+
+Nesta questão a IA demonstra os métodos de variáveis String dispostos na linguagem Dart
+que facilitam bastante o gerenciamento de Strings em Dart como a procura, leitura, conversão
+e demais processos em Dart.
+
+-->
+
 • Traga a documentação dos métodos de variáveis inteiras.
 
 • Métodos da classe int
@@ -235,3 +306,10 @@ Usar final e const impede que valores sejam alterados acidentalmente, evitando b
 🔹 toUnsigned(int width): Trunca o número para um valor não assinado com o número de bits especificado.
 
 🔹 toSigned(int width): Trunca o número para um valor assinado com o número de bits especificado.
+
+<!--
+
+Nesta questão a IA demonstra os métodos das variáveis Int dispostos na linguagem Dart
+que facilitam a conversão, arredondamento, exponenciação e entre outros processos.
+
+-->
